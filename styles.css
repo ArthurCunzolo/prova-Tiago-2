@@ -1,0 +1,84 @@
+/* Estilos base para o site */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilização da seção do herói */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho do menu */
+.menu-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Cabeçalhos de categorias do menu */
+.menu-category {
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Cartões de itens do menu */
+.menu-item {
+    height: 100%;
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.item-description {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.item-price {
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Estilização de formulários */
+#contactForm {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    /* Reduzir o espaçamento na seção hero para dispositivos móveis */
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    /* Centralizar texto no celular */
+    .text-md-left, .text-md-right {
+        text-align: center !important;
+    }
+}
